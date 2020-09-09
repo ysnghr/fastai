@@ -122,7 +122,11 @@ random_batch <- function(object, regex = "[0-9]+", label = 'label', folder_name 
 #' @param vocab vocab
 #' @param item_tfms One or several transforms applied to the items before batching them
 #' @param batch_tfms One or several transforms applied to the batches once they are formed
+<<<<<<< HEAD
 #' @param bs The batch size
+=======
+#' @param bs bs
+>>>>>>> 1272254ce492200a98c6b25b654f46247e760746
 #' @param val_bs The batch size for the validation DataLoader (defaults to bs)
 #' @param shuffle_train If we shuffle the training DataLoader or not
 #' @param device device
@@ -446,8 +450,3 @@ ImageDataLoaders_from_path_re <- function(path, fnames, pat, valid_pct = 0.2,
 
   do.call(vision$all$ImageDataLoaders$from_path_re, argss)
 }
-
-
-
-
-
